@@ -1,5 +1,1 @@
 
-[submodule "public/public"]
-	path = public/public
-	url = git@github.com:carloct/carloct.github.io.git
-	branch = master
