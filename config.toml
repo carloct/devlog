@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://carloct.github.io"
+baseurl = "https://carloct.github.io/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en"
 title = "DevLog"
