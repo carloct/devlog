@@ -1,1 +1,11 @@
 
+[submodule "public"]
+	path = public
+	url = git@github.com:carloct/carloct.github.io.git
+	branch = master
+[submodule "themes/kube"]
+	path = themes/kube
+	url = https://github.com/jeblister/kube
+[submodule "themes/hugo-theme-learn"]
+	path = themes/hugo-theme-learn
+	url = https://github.com/matcornic/hugo-theme-learn/
