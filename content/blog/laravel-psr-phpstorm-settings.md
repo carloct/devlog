@@ -13,7 +13,7 @@ Type **Code Style** in the search box if you can't see it
 
 ![](/uploads/phpstorm-preference-code-style.png)
 
-Then select **PHP** from the sub-menu. Now, pratically hidden in the right upper corner, there's a link (button?) **Set from...**
+Then select **PHP** from the sub-menu. Now, practically hidden in the right upper corner, there's a link (button?) **Set from...**
 
 ![](/uploads/screencast 2018-09-10 15-43-38.gif)
 
@@ -27,4 +27,14 @@ We're only halfway through, this only enforce the selected code style when invok
 
 If you want to format the code automatically every time you save a file, there's one more step.
 
-You can define a Macro and remap the save action to a list of  commands, specifically Reformat Code and then Save, but once you do that, there's no easy path to disable the formatting temporarily for whatever reason, so I suggest to use a very popular plugin: [https://github.com/dubreuia/intellij-plugin-save-actions](https://github.com/dubreuia/intellij-plugin-save-actions "Save Action Plugin")
+You can define a Macro and remap the save action to a list of  commands, specifically Reformat Code and then Save, but once you do that, there's no easy path to disable the formatting temporarily for whatever reason, so I suggest to use a very popular plugin: 
+
+[https://github.com/dubreuia/intellij-plugin-save-actions](https://github.com/dubreuia/intellij-plugin-save-actions "Save Actions Plugin")
+
+Follow the installation instructions and Restart PhpStorm
+
+Open the Preferences panel again, and you will see a new menu **Save Actions** at the bottom
+
+![](/uploads/Preferences 2018-09-10 16-17-55.png)
+
+There are a few settings you can adapt to your needs, and most important you can easily disable it without remapping shortcuts, and add _paths/files you want to ignore._
