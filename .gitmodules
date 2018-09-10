@@ -1,8 +1,3 @@
-
-[submodule "public"]
-	path = public
-	url = git@github.com:carloct/carloct.github.io.git
-	branch = master
 [submodule "themes/kube"]
 	path = themes/kube
 	url = https://github.com/jeblister/kube
