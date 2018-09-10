@@ -10,5 +10,3 @@ fields:
   description: Post title
   config:
     required: true
-pages:
-- content/blog/laravel-psr-phpstorm-settings.md
