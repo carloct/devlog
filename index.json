@@ -21,6 +21,13 @@
 	"content": " Chapter X Algorithms You\u0026rsquo;ll need some coffee\n"
 },
 {
+	"uri": "https://carloct.github.io/devlog/",
+	"title": "DevLog",
+	"tags": [],
+	"description": "",
+	"content": " DevLog "
+},
+{
 	"uri": "https://carloct.github.io/devlog/react/",
 	"title": "React",
 	"tags": [],
@@ -58,13 +65,6 @@
 {
 	"uri": "https://carloct.github.io/devlog/categories/",
 	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://carloct.github.io/devlog/",
-	"title": "DevLog",
 	"tags": [],
 	"description": "",
 	"content": ""
