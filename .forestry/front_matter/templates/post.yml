@@ -2,4 +2,11 @@
 label: Post
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  default: Title
+  label: Title
+  name: title
+  description: Post title
+  config:
+    required: true
