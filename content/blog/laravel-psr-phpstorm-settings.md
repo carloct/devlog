@@ -31,7 +31,7 @@ You can define a Macro and remap the save action to a list of  commands, specifi
 
 [https://github.com/dubreuia/intellij-plugin-save-actions](https://github.com/dubreuia/intellij-plugin-save-actions "Save Actions Plugin")
 
-Follow the installation instructions and Restart PhpStorm
+Follow the installation instructions and restart PhpStorm
 
 Open the Preferences panel again, and you will see a new menu **Save Actions** at the bottom
 
