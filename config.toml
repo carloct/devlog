@@ -1,12 +1,8 @@
-baseURL = "https://carloct.github.io/"
-languageCode = "en-us"
-title = "DevLog"
-theme = "hugo-theme-learn"
-description = "Fixing bugs"
 Paginate = 4
-
+baseURL = "https://carloct.github.io/"
+description = "Fixing bugs"
+languageCode = "en-us"
+theme = "hugo-theme-learn"
+title = "DevLog"
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
-
-
-
+home = ["HTML", "RSS", "JSON"]
