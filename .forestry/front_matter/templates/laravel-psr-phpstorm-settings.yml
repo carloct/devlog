@@ -16,3 +16,5 @@ fields:
 - type: tag_list
   name: tags
   label: tags
+pages:
+- content/blog/laravel-psr-phpstorm-settings.md
