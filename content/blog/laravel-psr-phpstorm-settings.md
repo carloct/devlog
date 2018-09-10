@@ -37,4 +37,6 @@ Open the Preferences panel again, and you will see a new menu **Save Actions** a
 
 ![](/uploads/Preferences 2018-09-10 16-17-55.png)
 
+At this point whenever you save a file, the code will be formatted to a PSR1/2 standard.
+
 There are a few settings you can adapt to your needs, and most importantly you can easily disable it without remapping shortcuts, and add _paths/files you want to ignore._
