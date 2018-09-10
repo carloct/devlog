@@ -1,8 +1,0 @@
-Paginate = 4
-baseURL = "https://carloct.github.io/"
-description = "Fixing bugs"
-languageCode = "en-us"
-theme = "hugo-theme-learn"
-title = "DevLog"
-[outputs]
-home = ["HTML", "RSS", "JSON"]

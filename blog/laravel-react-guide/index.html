@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.48" />
+    <meta name="description" content="Vuejs is great but what about React?">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Guide on React with Laravel 5.4 :: DevLog</title>
+
+    
+    <link href="/css/nucleus.css?1536611214" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1536611214" rel="stylesheet">
+    <link href="/css/hybrid.css?1536611214" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1536611214" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1536611214" rel="stylesheet">
+    <link href="/css/auto-complete.css?1536611214" rel="stylesheet">
+    <link href="/css/theme.css?1536611214" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1536611214" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1536611214"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+<link href="css/custom.css" rel="stylesheet">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99608027-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-99608027-1');
+</script>
+  </head>
+  <body class="" data-url="/blog/laravel-react-guide/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  Keisen
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1536611214"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1536611214"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1536611214"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/algorithms/" title="Algorithms" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/algorithms/">
+          <b>X. </b>Algorithms
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithms/loop-analysis/" title="Loop analysis" class="dd-item ">
+        <a href="/algorithms/loop-analysis/">
+        Loop analysis
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/react/" title="React" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/react/">
+          <b>X. </b>React
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/react/render-props/" title="Render Props" class="dd-item ">
+        <a href="/react/render-props/">
+        Render Props
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/blog/" title="Blogs" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/blog/">
+          Blogs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/psr-phpstorm-settings/" title="PSR PhpStorm settings" class="dd-item ">
+        <a href="/blog/psr-phpstorm-settings/">
+        PSR PhpStorm settings
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/laravel-react-guide/" title="Guide on React with Laravel 5.4" class="dd-item active">
+        <a href="/blog/laravel-react-guide/">
+        Guide on React with Laravel 5.4
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/blog/laravel-on-docker/" title="Minimal Docker setup for Laravel on macOS" class="dd-item ">
+        <a href="/blog/laravel-on-docker/">
+        Minimal Docker setup for Laravel on macOS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>DevLog</a> > <a href='/blog/'>Blogs</a> > Guide on React with Laravel 5.4
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#create-a-laravel-project">Create a Laravel project</a></li>
+<li><a href="#set-up-laravel-mix">Set up Laravel Mix</a></li>
+<li><a href="#clean-up">Clean up</a></li>
+<li><a href="#test-it">Test it</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Guide on React with Laravel 5.4</h1>
+          
+
+        
+
+
+
+
+<p>Laravel 5.4 comes shipped with a nice integration with Vuejs, you install the framework and everything is already in place, there are even few example files you can start from, but what about React?</p>
+
+<p>Vuejs is a <em>great</em> framework, but I like the less conventional approach of React and the more active community, and thanks to the amazing <a href="https://laravel.com/docs/5.4/mix">Laravel Mix</a>, switching to React is a no brainer.</p>
+
+<h4 id="create-a-laravel-project">Create a Laravel project</h4>
+
+<pre><code>composer create-project --prefer-dist laravel/laravel laravel-react
+</code></pre>
+
+<p>And install the npm dependencies</p>
+
+<pre><code>npm install
+</code></pre>
+
+<p>Add react and react-dom as dependencies</p>
+
+<pre><code>npm install --save react react-dom
+</code></pre>
+
+<h4 id="set-up-laravel-mix">Set up Laravel Mix</h4>
+
+<p>Laravel 5.4 relies on Mix for the assets compiling, it&rsquo;s essentially a wrapper around Webpack, and it exposes a method for using React out of box.</p>
+
+<p>In <code>webpack.min.js</code> change the line:</p>
+
+<pre><code class="language-javascript">mix.js('resources/assets/js/app.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css');
+</code></pre>
+
+<p>To:</p>
+
+<pre><code class="language-javascript">mix.react('resources/assets/js/app.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css');
+</code></pre>
+
+<p>now run <code>npm run dev</code>, Mix will download all the dependencies required to transpile React jsx.</p>
+
+<p>That&rsquo;s it, Mix did all the hard work for us. You can even run <code>npm run watch</code> and it will recompile the javascript as soon as you save the file.</p>
+
+<h4 id="clean-up">Clean up</h4>
+
+<p>Laravel comes with some references to Vue that you want to remove since you won&rsquo;t be using them.</p>
+
+<p>In <code>resources/assets/js/app.js</code>, delete the content and replace it with:</p>
+
+<pre><code class="language-javascript">import React from 'react';
+import ReactDom from 'react-dom';
+
+
+ ReactDom.render(
+   &lt;h1&gt;Hello, React!&lt;/h1&gt;,
+   document.getElementById('root')
+ );
+</code></pre>
+
+<p>In <code>package.json</code> remove Vue from the dependencies, and delete <code>resources/assets/js/bootstrap.js</code></p>
+
+<h4 id="test-it">Test it</h4>
+
+<p>Open <code>resources/views/welcome.blade.php</code> and add a <code>&lt;script&gt;</code> tag before the closing <code>&lt;/body&gt;</code> tag</p>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>then add a div that will be your root react element, anywhere within the <code>&lt;body&gt;</code> tag</p>
+
+<pre><code class="language-html">&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<p>Build the js modules</p>
+
+<pre><code>npm run dev
+</code></pre>
+
+<p>Test it with the built-in laravel server</p>
+
+<pre><code>php artisan serve
+</code></pre>
+
+<p>and you should see</p>
+
+<p><img src="/img/hello-react.png" alt="Hello React" /></p>
+
+<p>If you want to take full advantage of ES6, you should also install the relative babel modules:</p>
+
+<pre><code>npm install --only=dev babel-preset-es2015 babel-preset-stage-2
+</code></pre>
+
+<p>and drop a <code>.babelrc</code> file in the project root folder</p>
+
+<pre><code class="language-javascript">{
+    &quot;presets&quot;: [&quot;react&quot;, &quot;es2015&quot;, &quot;stage-2&quot;]
+}
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/blog/psr-phpstorm-settings/" title="PSR PhpStorm settings"> <i class="fas fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/blog/laravel-on-docker/" title="Minimal Docker setup for Laravel on macOS" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1536611214"></script>
+    <script src="/js/perfect-scrollbar.min.js?1536611214"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1536611214"></script>
+    <script src="/js/jquery.sticky.js?1536611214"></script>
+    <script src="/js/featherlight.min.js?1536611214"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1536611214"></script>
+    <script src="/js/highlight.pack.js?1536611214"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1536611214"></script>
+    <script src="/js/learn.js?1536611214"></script>
+    <script src="/js/hugo-learn.js?1536611214"></script>
+
+    <link href="/mermaid/mermaid.css?1536611214" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1536611214"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
