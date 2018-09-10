@@ -17,4 +17,4 @@ fields:
   name: tags
   label: tags
 pages:
-- content/blog/laravel-psr-phpstorm-settings.md
+- content/blog/psr-phpstorm-settings.md
