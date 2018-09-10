@@ -1,5 +1,5 @@
 Paginate = 4
-baseURL = "https://carloct.github.io/"
+baseURL = "https://carloct.github.io/devlog"
 description = "Fixing bugs"
 languageCode = "en-us"
 theme = "hugo-theme-learn"
