@@ -16,3 +16,5 @@ fields:
     required: true
 - type: tag_list
   name: Tags
+pages:
+- content/blog/laravel-psr-phpstorm-settings.md
