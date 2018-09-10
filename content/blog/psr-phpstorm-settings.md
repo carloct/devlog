@@ -9,7 +9,7 @@ undefined = "Laravel PSR-2 PhpStorm settings"
 +++
 PhpStorm has a built-in support for PSR1/2 standards, it can easily be enabled in the Preferences menu.
 
-Type **Code Style** in the search box if you can't see it 
+Type **Code Style** in the search box if you can't see it
 
 ![](/uploads/phpstorm-preference-code-style.png)
 
