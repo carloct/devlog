@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Psr on DevLog</title>
-    <link>https://carloct.github.io/tags/psr/</link>
+    <link>https://carloct.github.io/devlog/tags/psr/</link>
     <description>Recent content in Psr on DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Sep 2018 14:40:06 +0100</lastBuildDate>
     
-	<atom:link href="https://carloct.github.io/tags/psr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carloct.github.io/devlog/tags/psr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PSR PhpStorm settings</title>
-      <link>https://carloct.github.io/blog/psr-phpstorm-settings/</link>
+      <link>https://carloct.github.io/devlog/blog/psr-phpstorm-settings/</link>
       <pubDate>Mon, 10 Sep 2018 14:40:06 +0100</pubDate>
       
-      <guid>https://carloct.github.io/blog/psr-phpstorm-settings/</guid>
+      <guid>https://carloct.github.io/devlog/blog/psr-phpstorm-settings/</guid>
       <description>PhpStorm has a built-in support for PSR1/2 standards, it can easily be enabled in the Preferences menu.
 Type Code Style in the search box if you can&amp;rsquo;t see it
 Then select PHP from the sub-menu. Now, practically hidden in the right upper corner, there&amp;rsquo;s a link (button?) Set from&amp;hellip;

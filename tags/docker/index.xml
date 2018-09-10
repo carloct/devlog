@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on DevLog</title>
-    <link>https://carloct.github.io/tags/docker/</link>
+    <link>https://carloct.github.io/devlog/tags/docker/</link>
     <description>Recent content in Docker on DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 May 2017 03:37:00 +0100</lastBuildDate>
     
-	<atom:link href="https://carloct.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carloct.github.io/devlog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Minimal Docker setup for Laravel on macOS</title>
-      <link>https://carloct.github.io/blog/laravel-on-docker/</link>
+      <link>https://carloct.github.io/devlog/blog/laravel-on-docker/</link>
       <pubDate>Sun, 21 May 2017 03:37:00 +0100</pubDate>
       
-      <guid>https://carloct.github.io/blog/laravel-on-docker/</guid>
+      <guid>https://carloct.github.io/devlog/blog/laravel-on-docker/</guid>
       <description>There are many pre-built solutions for setting up a Laravel + Docker environment, they&amp;rsquo;re all excellent solutions, but too complex for my needs 90% of the times.
 It&amp;rsquo; s the boilerplate syndrome, a starter package that is supposed to ease the pain of creating a new project but then soon becomes a huge blob that tries to suit every possible setup.
 I wanted something that would let me start writing code with a minimal footprint, that could be eventually improved if necessary.</description>
