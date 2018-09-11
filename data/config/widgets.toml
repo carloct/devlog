@@ -1,3 +1,8 @@
+[about]
+title = " "
+description = ""
+logo = "/images/logo_edit.png"
+
 [sidebar_menu]
 title = ""
 mirror = "main"
