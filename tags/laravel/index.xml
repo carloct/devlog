@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laravel on DevLog</title>
+    <link>https://carloct.gihub.io/devlog/tags/laravel/</link>
+    <description>Recent content in Laravel on DevLog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright> IG</copyright>
+    <lastBuildDate>Wed, 24 May 2017 04:38:17 +0100</lastBuildDate>
+    
+	<atom:link href="https://carloct.gihub.io/devlog/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guide on React with Laravel 5.4</title>
+      <link>https://carloct.gihub.io/devlog/blog/laravel-react-guide/</link>
+      <pubDate>Wed, 24 May 2017 04:38:17 +0100</pubDate>
+      
+      <guid>https://carloct.gihub.io/devlog/blog/laravel-react-guide/</guid>
+      <description>Laravel 5.4 comes shipped with a nice integration with Vuejs, you install the framework and everything is already in place, there are even few example files you can start from, but what about React?
+Vuejs is a great framework, but I like the less conventional approach of React and the more active community, and thanks to the amazing Laravel Mix, switching to React is a no brainer.
+Create a Laravel project composer create-project --prefer-dist laravel/laravel laravel-react  And install the npm dependencies</description>
+    </item>
+    
+    <item>
+      <title>Minimal Docker setup for Laravel on macOS</title>
+      <link>https://carloct.gihub.io/devlog/blog/laravel-on-docker/</link>
+      <pubDate>Sun, 21 May 2017 03:37:00 +0100</pubDate>
+      
+      <guid>https://carloct.gihub.io/devlog/blog/laravel-on-docker/</guid>
+      <description>There are many pre-built solutions for setting up a Laravel + Docker environment, they&amp;rsquo;re all excellent solutions, but too complex for my needs 90% of the times.
+It&amp;rsquo; s the boilerplate syndrome, a starter package that is supposed to ease the pain of creating a new project but then soon becomes a huge blob that tries to suit every possible setup.
+I wanted something that would let me start writing code with a minimal footprint, that could be eventually improved if necessary.</description>
+    </item>
+    
+  </channel>
+</rss>
