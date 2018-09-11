@@ -145,8 +145,6 @@ weight = 2
 identifier = "algorithms"
 url = "/algorithms/"
 
-
-
 [blackfriday]
 hrefTargetBlank = true
 
