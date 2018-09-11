@@ -78,21 +78,20 @@ If you go to `localhost:80` in your browser you will see the default Nginx page
 
 The setup for the PHP container will require some tweaking since the official [PHP image](https://hub.docker.com/_/php/) doesn't come with all the extensions we need to run Laravel. We will _extend_ the official image and add everything we need.
 
-Since also the Nginx image will require some additional command, we can keep all the customised images in a sub-folder `image`, within `docker-laravel`.
+Since also the Nginx image will require some additional command, we can keep all the customised images in a sub-folder `docker`, within `docker-laravel` folder.
 
 This will be the final layout:
 
     docker-laravel
-    |
-    |-images
+     |-docker
       |-php-fpm
       |-nginx
     docker-compose.yml
 
 Create the `php-fpm` folder
 
-    mkdir -p  images/php-fpm
-    cd images/php-fpm
+    mkdir -p  docker/php-fpm
+    cd docker/php-fpm
 
 We can extend the official Php image by creating a Dockerfile
 
@@ -118,12 +117,12 @@ Now we can use this image in our `docker-compose.yml`
             ports:
                 - "80:80"
         fpm:
-            build: ./images/php-fpm
+            build: ./docker/php-fpm
             ports:
                 - "9000:9000"
 
 The container is called `fpm`, you can choose anything you like.
-Instead of defining an `image`, we use `build` that simply tells docker that it needs to build the image from the Dockerfile in `./images/php-fpm`
+Instead of defining an `image`, we use `build` that simply tells docker that it needs to build the image from the Dockerfile in `./docker/php-fpm`
 
 Now we have Nginx and Php... in a black box, how can we share files from the host machine to the docker containers?
 
@@ -140,7 +139,7 @@ Docker compose let us specify a _volume_ we want to share with the containers, b
             working_dir:
                 /var/www/laravel
         fpm:
-            build: ./images/php-fpm
+            build: ./docker/php-fpm
             ports:
                 - "9000:9000"
             volumes:
@@ -175,7 +174,7 @@ With the directive `link`, we can define a link between containers.
             working_dir:
                 /var/www/laravel
         fpm:
-            build: ./images/php-fpm
+            build: ./docker/php-fpm
             ports:
                 - "9000:9000"
             volumes:
@@ -188,7 +187,7 @@ Now Nginx can _see_ the Php container. We defined the Php container as `fpm` so 
 #### Nginx virtual host
 
 Nginx needs to know about the source code we shared with its container.
-Create a `vhost.conf` file in `images/nginx`
+Create a `vhost.conf` file in `docker/nginx`
 
     server {
         listen 80;
@@ -232,7 +231,7 @@ Create a `vhost.conf` file in `images/nginx`
 And share this file with the nginx container
 
     volumes:
-        - ./images/nginx/vhost.conf:/etc/nginx/conf.d/laravel.conf
+        - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/laravel.conf
 
 to make things easier, map the virtual host in your local `hosts` file
 
@@ -282,7 +281,7 @@ The last thing we need to do is to link the db container to Php
 
     [...]
     fpm:
-        build: ./images/php-fpm
+        build: ./docker/php-fpm
         ports:
             - "9000:9000"
         links:
@@ -305,11 +304,11 @@ The final `docker-compose` will look like this:
                 - fpm
             volumes:
                 - ./:/var/www/laravel
-                - ./images/nginx/vhost.conf:/etc/nginx/conf.d/laravel.conf
+                - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/laravel.conf
             working_dir:
                 /var/www/laravel
         fpm:
-            build: ./images/php-fpm
+            build: ./docker/php-fpm
             ports:
                 - "9000:9000"
             links:
