@@ -5,8 +5,7 @@ title = "PSR PhpStorm settings"
 type = "post"
 
 +++
-
-PhpStorm has a built-in support for PSR1/2 standards, it can easily be enabled in the Preferences menu.
+PhpStorm has a built-in support for PSR1/2 standards, it can easily be enabled in the Preferences menu.  
 
 Type **Code Style** in the search box if you can't see it
 
@@ -28,7 +27,7 @@ If you want to format the code automatically every time you save a file, there's
 
 You can define a Macro and remap the save action to a list of commands, specifically Reformat Code and then Save, but once you do that, there's no easy path to disable the formatting temporarily for whatever reason, so I suggest to use a very popular plugin:
 
-[https://github.com/dubreuia/intellij-plugin-save-actions](https://github.com/dubreuia/intellij-plugin-save-actions 'Save Actions Plugin')
+[https://github.com/dubreuia/intellij-plugin-save-actions](https://github.com/dubreuia/intellij-plugin-save-actions "Save Actions Plugin")
 
 Follow the installation instructions and restart PhpStorm
 
