@@ -6,7 +6,7 @@
     <description>Recent content in Docker on DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright> IG</copyright>
-    <lastBuildDate>Sun, 21 May 2017 03:37:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 11 Sep 2018 03:37:00 +0100</lastBuildDate>
     
 	<atom:link href="https://dazzling-kowalevski-2b6f01.netlify.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Minimal Docker setup for Laravel on macOS</title>
       <link>https://dazzling-kowalevski-2b6f01.netlify.com/blog/laravel-on-docker/</link>
-      <pubDate>Sun, 21 May 2017 03:37:00 +0100</pubDate>
+      <pubDate>Tue, 11 Sep 2018 03:37:00 +0100</pubDate>
       
       <guid>https://dazzling-kowalevski-2b6f01.netlify.com/blog/laravel-on-docker/</guid>
       <description>There are many pre-built solutions for setting up a Laravel + Docker environment, they&amp;rsquo;re all excellent solutions, but too complex for my needs 90% of the times.

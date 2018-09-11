@@ -31,6 +31,17 @@ O(1) Represent the time complexity of an algorithms which doesn&amp;rsquo;t perf
     </item>
     
     <item>
+      <title>Minimal Docker setup for Laravel on macOS</title>
+      <link>https://dazzling-kowalevski-2b6f01.netlify.com/blog/laravel-on-docker/</link>
+      <pubDate>Tue, 11 Sep 2018 03:37:00 +0100</pubDate>
+      
+      <guid>https://dazzling-kowalevski-2b6f01.netlify.com/blog/laravel-on-docker/</guid>
+      <description>There are many pre-built solutions for setting up a Laravel + Docker environment, they&amp;rsquo;re all excellent solutions, but too complex for my needs 90% of the times.
+It&amp;rsquo; s the boilerplate syndrome, a starter package that is supposed to ease the pain of creating a new project but then soon becomes a huge blob that tries to suit every possible setup.
+I wanted something that would let me start writing code with a minimal footprint, that could be eventually improved if necessary.</description>
+    </item>
+    
+    <item>
       <title>PSR PhpStorm settings</title>
       <link>https://dazzling-kowalevski-2b6f01.netlify.com/blog/psr-phpstorm-settings/</link>
       <pubDate>Mon, 10 Sep 2018 14:40:06 +0100</pubDate>
@@ -53,17 +64,6 @@ Click Apply/OK</description>
       <description>Laravel 5.4 comes shipped with a nice integration with Vuejs, you install the framework and everything is already in place, there are even few example files you can start from, but what about React?
 Vuejs is a great framework, but I like the less conventional approach of React and the more active community, and thanks to the amazing Laravel Mix, switching to React is a no brainer.
 Create a Laravel project composer create-project --prefer-dist laravel/laravel laravel-react  And install the npm dependencies</description>
-    </item>
-    
-    <item>
-      <title>Minimal Docker setup for Laravel on macOS</title>
-      <link>https://dazzling-kowalevski-2b6f01.netlify.com/blog/laravel-on-docker/</link>
-      <pubDate>Sun, 21 May 2017 03:37:00 +0100</pubDate>
-      
-      <guid>https://dazzling-kowalevski-2b6f01.netlify.com/blog/laravel-on-docker/</guid>
-      <description>There are many pre-built solutions for setting up a Laravel + Docker environment, they&amp;rsquo;re all excellent solutions, but too complex for my needs 90% of the times.
-It&amp;rsquo; s the boilerplate syndrome, a starter package that is supposed to ease the pain of creating a new project but then soon becomes a huge blob that tries to suit every possible setup.
-I wanted something that would let me start writing code with a minimal footprint, that could be eventually improved if necessary.</description>
     </item>
     
   </channel>
