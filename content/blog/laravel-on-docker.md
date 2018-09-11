@@ -61,6 +61,7 @@ Let's define the Nginx container
 * `services` is the list of services you want to define
 * `nginx` is the name you choose for the service, can be anything
 * `image` is the docker image that you want to use for the service, in this case, the official [Nginx image](https://hub.docker.com/_/nginx/) published on Dockerhub (a central repository for public images)
+* `nginx:alpine` is a special version of the image built on a extremely small linux distribution (5MB), you can choose to use the standard, full debian image using `nginx:latest`
 * `ports` are the ports you want to map to the service. We're mapping the internal docker container port 80, the local machine port 80
 
 That's it, you have defined a stack with a single container, try it running:
