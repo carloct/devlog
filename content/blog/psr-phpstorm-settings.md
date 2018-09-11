@@ -1,13 +1,12 @@
 +++
-Tags = ["laravel", "phpstorm", "psr"]
-content = "The best approximation to a Prettier-like experience for PHP.\n\nOpen PhpStorm **Settings/Preferences** and search for **Code Style** \n\n![Phpstorm > Preferences > Code Style](/uploads/phpstorm-preference-code-style.png \"Phpstorm > Preferences > Code Style\")\n\nSelect *PHP*"
 date = "2018-09-10T14:40:06+01:00"
 tags = ["phpstorm", "psr2"]
 title = "PSR PhpStorm settings"
-undefined = "Laravel PSR-2 PhpStorm settings"
+type = "post"
 
 +++
-PhpStorm has a built-in support for PSR1/2 standards, it can easily be enabled in the Preferences menu.  
+
+PhpStorm has a built-in support for PSR1/2 standards, it can easily be enabled in the Preferences menu.
 
 Type **Code Style** in the search box if you can't see it
 
@@ -27,9 +26,9 @@ We're only halfway through, this only enforces the selected code style when invo
 
 If you want to format the code automatically every time you save a file, there's one more step.
 
-You can define a Macro and remap the save action to a list of  commands, specifically Reformat Code and then Save, but once you do that, there's no easy path to disable the formatting temporarily for whatever reason, so I suggest to use a very popular plugin:
+You can define a Macro and remap the save action to a list of commands, specifically Reformat Code and then Save, but once you do that, there's no easy path to disable the formatting temporarily for whatever reason, so I suggest to use a very popular plugin:
 
-[https://github.com/dubreuia/intellij-plugin-save-actions](https://github.com/dubreuia/intellij-plugin-save-actions "Save Actions Plugin")
+[https://github.com/dubreuia/intellij-plugin-save-actions](https://github.com/dubreuia/intellij-plugin-save-actions 'Save Actions Plugin')
 
 Follow the installation instructions and restart PhpStorm
 

@@ -4,12 +4,13 @@ date = "2017-05-24T04:38:17+01:00"
 description = "Vuejs is great but what about React?"
 tags = ["laravel", "react"]
 title = "Guide on React with Laravel 5.4"
+type = "post"
 
 +++
 
 Laravel 5.4 comes shipped with a nice integration with Vuejs, you install the framework and everything is already in place, there are even few example files you can start from, but what about React?
 
-Vuejs is a *great* framework, but I like the less conventional approach of React and the more active community, and thanks to the amazing [Laravel Mix](https://laravel.com/docs/5.4/mix), switching to React is a no brainer.
+Vuejs is a _great_ framework, but I like the less conventional approach of React and the more active community, and thanks to the amazing [Laravel Mix](https://laravel.com/docs/5.4/mix), switching to React is a no brainer.
 
 #### Create a Laravel project
 
@@ -36,15 +37,17 @@ Laravel 5.4 relies on Mix for the assets compiling, it's essentially a wrapper a
 In `webpack.min.js` change the line:
 
 ```javascript
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix
+  .js('resources/assets/js/app.js', 'public/js')
+  .sass('resources/assets/sass/app.scss', 'public/css');
 ```
 
 To:
 
 ```javascript
-mix.react('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix
+  .react('resources/assets/js/app.js', 'public/js')
+  .sass('resources/assets/sass/app.scss', 'public/css');
 ```
 
 now run `npm run dev`, Mix will download all the dependencies required to transpile React jsx.
@@ -61,11 +64,7 @@ In `resources/assets/js/app.js`, delete the content and replace it with:
 import React from 'react';
 import ReactDom from 'react-dom';
 
-
- ReactDom.render(
-   <h1>Hello, React!</h1>,
-   document.getElementById('root')
- );
+ReactDom.render(<h1>Hello, React!</h1>, document.getElementById('root'));
 ```
 
 In `package.json` remove Vue from the dependencies, and delete `resources/assets/js/bootstrap.js`
@@ -78,7 +77,7 @@ Open `resources/views/welcome.blade.php` and add a `<script>` tag before the clo
 <script type="text/javascript" src="js/app.js"></script>
 ```
 
- then add a div that will be your root react element, anywhere within the `<body>` tag
+then add a div that will be your root react element, anywhere within the `<body>` tag
 
 ```html
 <div id="root"></div>

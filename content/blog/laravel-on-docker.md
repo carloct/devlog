@@ -4,12 +4,13 @@ date = "2017-05-21T03:37:00+01:00"
 description = "No boilerplate, just the minimum"
 tags = ["laravel", "docker"]
 title = "Minimal Docker setup for Laravel on macOS"
+type = "post"
 
 +++
 
 There are many pre-built solutions for setting up a Laravel + Docker environment, they're all excellent solutions, but too complex for my needs 90% of the times.
 
-It' s the *boilerplate syndrome*, a starter package that is supposed to ease the pain of creating a new project but then soon becomes a huge blob that tries to suit every possible setup.
+It' s the _boilerplate syndrome_, a starter package that is supposed to ease the pain of creating a new project but then soon becomes a huge blob that tries to suit every possible setup.
 
 I wanted something that would let me start writing code with a minimal footprint, that could be eventually improved if necessary.
 
@@ -31,9 +32,7 @@ In particular, we need:
 
 - Nginx
 - Php 7.1 as FPM
-- Mysql  
-
-
+- Mysql
 
 Create a folder, I'll name it `docker-laravel`, choose any name you like.
 
@@ -61,13 +60,11 @@ services:
             - "80:80"
 ```
 
-+ `version` is the docker compose syntax version, in this case, the version 3, the latest at the time of writing
-+ `services` is the list of services you want to define
-+ `nginx` is the name you choose for the service, can be anything
-+ `image` is the docker image that you want to use for the service, in this case, the official [Nginx image](https://hub.docker.com/_/nginx/) published on Dockerhub (a central repository for public images)
-+ `ports` are the ports you want to map to the service. We're mapping the internal docker container port 80, the local machine port 80  
-
-
+- `version` is the docker compose syntax version, in this case, the version 3, the latest at the time of writing
+- `services` is the list of services you want to define
+- `nginx` is the name you choose for the service, can be anything
+- `image` is the docker image that you want to use for the service, in this case, the official [Nginx image](https://hub.docker.com/_/nginx/) published on Dockerhub (a central repository for public images)
+- `ports` are the ports you want to map to the service. We're mapping the internal docker container port 80, the local machine port 80
 
 That's it, you have defined a stack with a single container, try it running:
 
@@ -82,7 +79,7 @@ If you go to `localhost:80` in your browser you will see the default Nginx page
 
 #### PHP
 
-The setup for the PHP container will require some tweaking since the official [PHP image](https://hub.docker.com/_/php/) doesn't come with all the extensions we need to run Laravel. We will *extend* the official image and add everything we need.
+The setup for the PHP container will require some tweaking since the official [PHP image](https://hub.docker.com/_/php/) doesn't come with all the extensions we need to run Laravel. We will _extend_ the official image and add everything we need.
 
 Since also the Nginx image will require some additional command, we can keep all the customised images in a sub-folder `image`, within `docker-laravel`.
 
@@ -98,6 +95,7 @@ docker-compose.yml
 ```
 
 Create the `php-fpm` folder
+
 ```
 mkdir -p  images/php-fpm
 cd images/php-fpm
@@ -110,6 +108,7 @@ vi Dockerfile
 ```
 
 Dockerfile
+
 ```
 FROM php:fpm
 
@@ -118,8 +117,8 @@ RUN apt-get update && apt-get install -y \
     docker-php-ext-install pdo_mysql mcrypt
 ```
 
-+ `FROM` defines the image we're extending from
-+ `RUN` is the command that the container will execute when started, in this case, we install `mcrypt` and enable it with the prebuilt command `docker-php-install` command. We enable also `pdo_mysql`
+- `FROM` defines the image we're extending from
+- `RUN` is the command that the container will execute when started, in this case, we install `mcrypt` and enable it with the prebuilt command `docker-php-install` command. We enable also `pdo_mysql`
 
 Now we can use this image in our `docker-compose.yml`
 
@@ -141,7 +140,7 @@ Instead of defining an `image`, we use `build` that simply tells docker that it 
 
 Now we have Nginx and Php... in a black box, how can we share files from the host machine to the docker containers?
 
-Docker compose let us specify a *volume* we want to share with the containers, basically a shared folder from the host machine to the containers.
+Docker compose let us specify a _volume_ we want to share with the containers, basically a shared folder from the host machine to the containers.
 
 ```
 version: '3'
@@ -164,9 +163,9 @@ services:
             /var/www/laravel
 ```
 
-`volume` will share the current directory (the directory where the docker-compose.yml file is) with a directory `/var/www/laravel`.  
+`volume` will share the current directory (the directory where the docker-compose.yml file is) with a directory `/var/www/laravel`.
 
-The syntax is `local_folder:container_folder`  
+The syntax is `local_folder:container_folder`
 
 The folder is shared with both Nginx and Php containers, this is not necessary, but having the source code mapped also to the Php container will ease the pain of running Composer.
 
@@ -201,7 +200,7 @@ services:
             /var/www/laravel
 ```
 
-Now Nginx can *see* the Php container. We defined the Php container as `fpm` so we need to use the same name to link it up.
+Now Nginx can _see_ the Php container. We defined the Php container as `fpm` so we need to use the same name to link it up.
 
 #### Nginx virtual host
 
@@ -247,7 +246,6 @@ server {
         deny all;
     }
 }
-
 ```
 
 And share this file with the nginx container
@@ -255,7 +253,6 @@ And share this file with the nginx container
 ```
 volumes:
     - ./images/nginx/vhost.conf:/etc/nginx/conf.d/laravel.conf
-
 ```
 
 to make things easier, map the virtual host in your local `hosts` file
@@ -366,7 +363,6 @@ services:
 
 volumes:
     data:
-
 ```
 
 Run `docker-compose up` and the images will be downloaded/built and the containers will be started. You can access it via `laravel.dev` in your browser.
