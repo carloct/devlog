@@ -53,7 +53,7 @@ Let's define the Nginx container
     version: '3'
     services:
         nginx:
-            image: nginx:latest
+            image: nginx:alpine
             ports:
                 - "80:80"
 
