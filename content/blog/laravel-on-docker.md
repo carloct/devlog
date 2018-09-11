@@ -72,7 +72,7 @@ docker-compose up
 Docker will download the Nginx image, create the container and expose the ports.
 If you go to `localhost:80` in your browser you will see the default Nginx page
 
-
+![](/uploads/welcome_to_nginx.png)
 
 #### PHP
 
@@ -237,7 +237,7 @@ And share this file with the nginx container
 to make things easier, map the virtual host in your local `hosts` file
 
     vi /etc/hosts
-
+    
     ##
     # Host Database
     #
