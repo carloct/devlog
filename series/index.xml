@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on DevLog</title>
-    <link>https://carloct.gihub.io/devlog/series/</link>
+    <link>https://dazzling-kowalevski-2b6f01.netlify.com/series/</link>
     <description>Recent content in Series on DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright> IG</copyright>
     
-	<atom:link href="https://carloct.gihub.io/devlog/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dazzling-kowalevski-2b6f01.netlify.com/series/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
