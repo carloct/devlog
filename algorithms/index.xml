@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on DevLog</title>
-    <link>https://carloct.github.io/devlog/algorithms/</link>
+    <link>https://carloct.gihub.io/devlog/algorithms/</link>
     <description>Recent content in Algorithms on DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 26 Aug 2018 22:52:11 +0100</lastBuildDate>
+    <copyright> IG</copyright>
+    <lastBuildDate>Sun, 26 Aug 2018 23:10:41 +0100</lastBuildDate>
     
-	<atom:link href="https://carloct.github.io/devlog/algorithms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carloct.gihub.io/devlog/algorithms/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Loop analysis</title>
-      <link>https://carloct.github.io/devlog/algorithms/loop-analysis/</link>
+      <link>https://carloct.gihub.io/devlog/algorithms/loop-analysis/</link>
       <pubDate>Sun, 26 Aug 2018 23:10:41 +0100</pubDate>
       
-      <guid>https://carloct.github.io/devlog/algorithms/loop-analysis/</guid>
+      <guid>https://carloct.gihub.io/devlog/algorithms/loop-analysis/</guid>
       <description>Loop analysis It&amp;rsquo;s important to remember that the time complexity, and in particular the big O notation is an aproximation and it is supposed to represents only the growth in relation of a variable input. It&amp;rsquo;s not the sum of the time taken by each algorithm step, it&amp;rsquo;s a measurement of the computation time growth for an arbitrary, variable input. Anything constant can be ignored
 O(1) Represent the time complexity of an algorithms which doesn&amp;rsquo;t perform any loop, recursion, or call to a non time-costant function</description>
     </item>

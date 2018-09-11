@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on DevLog</title>
-    <link>https://carloct.github.io/devlog/tags/react/</link>
+    <link>https://carloct.gihub.io/devlog/tags/react/</link>
     <description>Recent content in React on DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright> IG</copyright>
     <lastBuildDate>Wed, 24 May 2017 04:38:17 +0100</lastBuildDate>
     
-	<atom:link href="https://carloct.github.io/devlog/tags/react/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carloct.gihub.io/devlog/tags/react/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Guide on React with Laravel 5.4</title>
-      <link>https://carloct.github.io/devlog/blog/laravel-react-guide/</link>
+      <link>https://carloct.gihub.io/devlog/blog/laravel-react-guide/</link>
       <pubDate>Wed, 24 May 2017 04:38:17 +0100</pubDate>
       
-      <guid>https://carloct.github.io/devlog/blog/laravel-react-guide/</guid>
+      <guid>https://carloct.gihub.io/devlog/blog/laravel-react-guide/</guid>
       <description>Laravel 5.4 comes shipped with a nice integration with Vuejs, you install the framework and everything is already in place, there are even few example files you can start from, but what about React?
 Vuejs is a great framework, but I like the less conventional approach of React and the more active community, and thanks to the amazing Laravel Mix, switching to React is a no brainer.
 Create a Laravel project composer create-project --prefer-dist laravel/laravel laravel-react  And install the npm dependencies</description>

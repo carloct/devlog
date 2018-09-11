@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on DevLog</title>
-    <link>https://carloct.github.io/devlog/react/</link>
+    <link>https://carloct.gihub.io/devlog/react/</link>
     <description>Recent content in React on DevLog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright> IG</copyright>
     <lastBuildDate>Sun, 26 Aug 2018 22:52:11 +0100</lastBuildDate>
     
-	<atom:link href="https://carloct.github.io/devlog/react/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carloct.gihub.io/devlog/react/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Render Props</title>
-      <link>https://carloct.github.io/devlog/react/render-props/</link>
+      <link>https://carloct.gihub.io/devlog/react/render-props/</link>
       <pubDate>Sun, 26 Aug 2018 23:10:41 +0100</pubDate>
       
-      <guid>https://carloct.github.io/devlog/react/render-props/</guid>
+      <guid>https://carloct.gihub.io/devlog/react/render-props/</guid>
       <description> Resources  Never Write Another HoC Understanding Render Props Children Render Props Facebook - Render Props Do more with less  </description>
     </item>
     
