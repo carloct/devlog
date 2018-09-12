@@ -12,6 +12,10 @@ _Updated for:_
 `PHP 7.2`  
 `Laravel 5.7`
 
+Source available at [https://github.com/carloct/docker-laravel](https://github.com/carloct/docker-laravel "Docker Laravel")
+
+***
+
 There are many pre-built solutions for setting up a Laravel + Docker environment, they're all excellent solutions, but too complex for my needs 90% of the times.
 
 It' s the _boilerplate syndrome_, a starter package that is supposed to ease the pain of creating a new project but then soon becomes a huge blob that tries to suit every possible setup.
