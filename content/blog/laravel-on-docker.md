@@ -7,6 +7,11 @@ title = "Minimal Docker setup for Laravel on macOS"
 type = "post"
 
 +++
+_Updated for:_
+
+`PHP 7.2`  
+`Laravel 5.7`
+
 There are many pre-built solutions for setting up a Laravel + Docker environment, they're all excellent solutions, but too complex for my needs 90% of the times.
 
 It' s the _boilerplate syndrome_, a starter package that is supposed to ease the pain of creating a new project but then soon becomes a huge blob that tries to suit every possible setup.
@@ -30,7 +35,7 @@ Docker offers an easy way to define a stack of services called Docker Compose. I
 In particular, we need:
 
 * Nginx
-* Php 7.1 as FPM
+* PHP 7.2 as FPM
 * Mysql
 
 Create a folder, I'll name it `docker-laravel`, choose any name you like.

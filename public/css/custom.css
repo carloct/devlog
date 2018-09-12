@@ -1,0 +1,8 @@
+.widget-about .site-title {
+  margin-bottom: 0;
+  font-size: 1.50em;
+}
+
+.sep-after:after, .sep-before:before {
+  width: 5.10em;
+}
