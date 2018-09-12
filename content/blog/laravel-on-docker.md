@@ -100,14 +100,13 @@ We can extend the official Php image by creating a Dockerfile
 
 Dockerfile
 
-    FROM php:fpm
+    FROM php:7.2-fpm
     
     RUN apt-get update && apt-get install -y \
-        libmcrypt-dev && \
-        docker-php-ext-install pdo_mysql mcrypt
+      && docker-php-ext-install pdo_mysql 
 
 * `FROM` defines the image we're extending from
-* `RUN` is the command that the container will execute when started, in this case, we install `mcrypt` and enable it with the prebuilt command `docker-php-install` command. We enable also `pdo_mysql`
+* `RUN` is the command that the container will execute when started, in this case, we install `pdo_mysql` and enable it with the prebuilt command `docker-php-install` command.
 
 Now we can use this image in our `docker-compose.yml`
 
@@ -119,8 +118,6 @@ Now we can use this image in our `docker-compose.yml`
                 - "80:80"
         fpm:
             build: ./docker/php-fpm
-            ports:
-                - "9000:9000"
 
 The container is called `fpm`, you can choose anything you like.
 Instead of defining an `image`, we use `build` that simply tells docker that it needs to build the image from the Dockerfile in `./docker/php-fpm`
@@ -141,8 +138,6 @@ Docker compose let us specify a _volume_ we want to share with the containers, b
                 /var/www/laravel
         fpm:
             build: ./docker/php-fpm
-            ports:
-                - "9000:9000"
             volumes:
                 - ./:/var/www/laravel
             working_dir:
@@ -176,8 +171,6 @@ With the directive `link`, we can define a link between containers.
                 /var/www/laravel
         fpm:
             build: ./docker/php-fpm
-            ports:
-                - "9000:9000"
             volumes:
                 - ./:/var/www/laravel
             working_dir:
@@ -192,7 +185,7 @@ Create a `vhost.conf` file in `docker/nginx`
 
     server {
         listen 80;
-        server_name laravel.dev;
+        server_name laravel.local;
         root /var/www/laravel/public;
     
         index index.html index.htm index.php;
@@ -248,7 +241,7 @@ to make things easier, map the virtual host in your local `hosts` file
     255.255.255.255 broadcasthost
     ::1             localhost
     
-    127.0.0.1       laravel.dev
+    127.0.0.1       laravel.local
 
 #### Mysql
 
@@ -283,8 +276,6 @@ The last thing we need to do is to link the db container to Php
     [...]
     fpm:
         build: ./docker/php-fpm
-        ports:
-            - "9000:9000"
         links:
             - db
         volumes:
@@ -310,8 +301,6 @@ The final `docker-compose` will look like this:
                 /var/www/laravel
         fpm:
             build: ./docker/php-fpm
-            ports:
-                - "9000:9000"
             links:
                 - db
             volumes:
@@ -334,7 +323,7 @@ The final `docker-compose` will look like this:
     volumes:
         data:
 
-Run `docker-compose up` and the images will be downloaded/built and the containers will be started. You can access it via `laravel.dev` in your browser.
+Run `docker-compose up` and the images will be downloaded/built and the containers will be started. You can access it via `laravel.local` in your browser.
 
 Now your app lives within a container, in particular, the php process will have access to the database via the `db` link, this is something to keep in mind when running migrations since the `.env` file will need to have the correct database host
 
